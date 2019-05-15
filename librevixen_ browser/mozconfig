@@ -1,0 +1,27 @@
+# This is for the desktop version of librefox
+ac_add_options --enable-application=browser
+
+# Folder to output the build files:
+mk_add_options MOZ_OBJDIR=./obj_BUILD_OUTPUT
+
+# Automatically download and use compiled C++ components, This option will disable C/C++ compilation 
+# This must be disabled for our own brand to be generated.
+# ac_add_options --enable-artifact-builds
+
+# Setting the branding options
+ac_add_options --with-app-name=librevixen
+ac_add_options --with-app-basename=LibreVixen
+ac_add_options --with-branding=browser/branding/librevixen
+ac_add_options --with-distribution-id=io.github.librevixen
+
+# For adding our own extensions at a later date
+# ac_add_options --enable-extensions=default|all|ext1,ext2,-skipext3
+
+# Privacy Options
+ac_add_options --disable-crashreporter
+ac_add_options --disable-maintenance-service
+
+# Todo Compile Firefox without Pocket
+
+
+
