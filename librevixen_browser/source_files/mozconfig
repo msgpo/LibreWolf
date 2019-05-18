@@ -19,9 +19,6 @@ ac_add_options --with-distribution-id=io.github.librevixen
 
 # Privacy Options
 ac_add_options --disable-crashreporter
-ac_add_options --disable-maintenance-service
-
-# Todo Compile Firefox without Pocket
 
 
 
